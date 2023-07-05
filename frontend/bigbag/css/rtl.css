@@ -1,0 +1,135 @@
+
+/*=====================================
+           Home page RTL CSS
+======================================*/
+
+.slick-list {
+    direction: ltr;
+}
+.slick-slide{
+    direction: rtl;
+}
+
+body {
+    text-align: right;
+}
+
+.left-sidebar-cover {
+    left: auto;
+    right: -400px;
+}
+.left-sidebar.active .left-sidebar-cover {
+    left: auto;
+    right: 0px;
+}
+.left-cross {
+    right: auto;
+    left: 15px;
+}
+.right-sidebar-cover {
+    left: -400px;
+    right: auto;
+}
+.right-sidebar.active .right-sidebar-cover {
+    right: auto;
+    left: 0px;
+}
+.right-cross {
+    right: 15px;
+    left: 0;
+}
+
+.left-bar {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.round-icon li {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.cate-heading i {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.cate-scroll li a {
+    text-align: right;
+}
+.navbar-form form .btn i {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.forgot{
+    text-align: left;
+}
+
+.cart_totals .shop_table tr td {
+    text-align: left;
+}
+.single-product-info {
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.single-page-slider{
+    direction: ltr;
+}
+.single-page-slider li{
+    margin-right: 15px;
+    margin-left: 0px;
+}
+.single-page-slider li:last-child{
+    margin-right: 0;
+}
+.single-product-widget ul li:first-child {
+    margin-right: 0;
+}
+.review-form h3 {
+    margin-right: 15px;
+}
+.review-form .btn {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: left;
+}
+.form-row > label {
+    text-align: right;
+}
+.invoice-detail-name {
+    display: flex;
+}
+
+.invoice-detail-name strong{
+    margin-left: 8px;
+}
+
+@media (max-width: 767px){
+    .round-icon li {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .round-icon li:last-child {
+        margin-right: 15px;
+    }
+    .left-bar {
+        margin-left: 0;
+    }
+
+    .left-widget li{
+        margin-left: 15px;
+        margin-right: 0;
+    }
+    .left-widget li:last-child{
+        margin-left: 15px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 575px){
+    .product-name {
+        text-align: right;
+    }
+}
+
+

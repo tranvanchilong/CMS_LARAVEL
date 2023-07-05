@@ -1,0 +1,12 @@
+{
+    "key": "list product",
+    "title": "List Product",
+    "category": "Web Section",
+    "data_type": [
+        "random product",
+        "new product",
+        "best selling product",
+        "trending product",
+        "top rate product"
+    ]
+}

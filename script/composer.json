@@ -1,0 +1,111 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "amcoders/lpress": "^0.0.1",
+        "anhskohbo/no-captcha": "^3.4",
+        "artesaos/seotools": "^0.20.0",
+        "astrotomic/laravel-translatable": "^11.9",
+        "barryvdh/laravel-debugbar": "^3.7",
+        "barryvdh/laravel-dompdf": "^0.8.7",
+        "bumbummen99/shoppingcart": "^3.0",
+        "cviebrock/eloquent-sluggable": "^8.0",
+        "doctrine/dbal": "^3.5",
+        "enlightn/enlightn": "^1.18",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.5",
+        "jeroendesloovere/vcard": "^1.7",
+        "joisarjignesh/bigbluebutton": "^2.3",
+        "jorenvanhocht/laravel-share": "^4.2",
+        "laravel/framework": "^8.12",
+        "laravel/sanctum": "^2.9",
+        "laravel/socialite": "^5.5",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.1",
+        "lasserafn/php-initial-avatar-generator": "^4.2",
+        "league/omnipay": "^3",
+        "maatwebsite/excel": "^3.1",
+        "mercadopago/dx-php": "^2.2",
+        "mews/captcha": "^3.2",
+        "mollie/mollie-api-php": "^2.0",
+        "mrgswift/laravel-encryptenv": "^1.0",
+        "omnipay/paypal": "^3.0",
+        "omnipay/stripe": "^3.1",
+        "phpviet/laravel-omnipay": "^1.1",
+        "razorpay/razorpay": "^2.5",
+        "samdark/sitemap": "^2.2",
+        "simplesoftwareio/simple-qrcode": "^4.2",
+        "spatie/calendar-links": "^1.8",
+        "spatie/laravel-analytics": "^3.10",
+        "spatie/laravel-newsletter": "^4.10",
+        "spatie/laravel-permission": "^3.17",
+        "toshy/bunnynet-php": "^2.3",
+        "tymon/jwt-auth": "^1.0",
+        "unisharp/laravel-filemanager": "^2.6",
+        "voku/portable-ascii": "^1.6"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "ocramius/package-versions": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Helpers/secEnv.php",
+            "app/Helper/helper.php",
+            "app/Helpers/LMS/helper.php",
+            "app/Mixins/Geo/Geo.php",
+            "app/Helpers/LMS/ApiHelper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Amcoders\\Lpress\\": "vendor/lpress/src"
+
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

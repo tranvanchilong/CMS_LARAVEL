@@ -1,0 +1,16 @@
+.header-area.slide-full-screen {
+    position: relative;
+}
+.header-area.slide-full-screen .header-large-device{
+    position: absolute;
+    width: 100%;
+}
+.header-area.slide-full-screen .header-large-device .header-top,
+.header-area.slide-full-screen .header-large-device .header-middle,
+.header-area.slide-full-screen .header-large-device .header-bottom{
+    position: relative;
+    z-index: 99
+}
+.slider-area .slider-height-2{
+    height: 700px;
+}

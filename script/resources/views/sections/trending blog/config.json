@@ -1,0 +1,9 @@
+{
+    "key": "trending blog",
+    "title": "Trending Blog",
+    "category": "News",
+    "data_type": [
+        "input",
+        "trending blog"
+    ]
+}

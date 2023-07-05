@@ -1,0 +1,9 @@
+{
+    "key": "blog_new",
+    "title": "Blog New",
+    "category": "News",
+    "data_type": [
+        "input",
+        "blog"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "key": "team",
+    "title": "Team",
+    "category": "Web Section",
+    "data_type": [
+        "input",
+        "team"
+    ]
+}

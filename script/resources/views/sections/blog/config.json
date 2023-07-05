@@ -1,0 +1,11 @@
+{
+    "key": "blog",
+    "title": "Blog",
+    "category": "Web Section",
+    "data_type": [
+        "input",
+        "blog",
+        "service",
+        "portfolio"
+    ]
+}

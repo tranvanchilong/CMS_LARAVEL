@@ -1,0 +1,9 @@
+{
+    "key": "faq",
+    "title": "FAQ",
+    "category": "Web Section",
+    "data_type": [
+        "input",
+        "faq"
+    ]
+}

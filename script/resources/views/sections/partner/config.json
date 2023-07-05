@@ -1,0 +1,9 @@
+{
+    "key": "partner",
+    "title": "Partner",
+    "category": "Web Section",
+    "data_type": [
+        "input",
+        "partner"
+    ]
+}

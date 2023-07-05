@@ -1,0 +1,9 @@
+{
+    "key": "testimonial",
+    "title": "Testimonial",
+    "category": "Web Section",
+    "data_type": [
+        "input",
+        "testimonial"
+    ]
+}
